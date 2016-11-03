@@ -55,6 +55,7 @@
 		FB0B8A901DCAB29100A8575F /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A6F1DCAB29100A8575F /* NSString+XMLEntities.m */; };
 		FB0B8A911DCAB29100A8575F /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A701DCAB29100A8575F /* SideBar.swift */; };
 		FB0B8A921DCAB29100A8575F /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A711DCAB29100A8575F /* SideBarTableViewController.swift */; };
+		FB0B8A961DCBB9EF00A8575F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */; };
 		FB237F291DCA9F2600591216 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB237F221DCA9F2600591216 /* Info.plist */; };
 		FB237F2C1DCAA09300591216 /* Packages in Resources */ = {isa = PBXBuildFile; fileRef = FB237F2B1DCAA09300591216 /* Packages */; };
 		FB8A28C71DCA78230047B6A1 /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A28C61DCA78230047B6A1 /* CategoriesCollectionViewController.swift */; };
@@ -188,6 +189,7 @@
 		FB0B8A6F1DCAB29100A8575F /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
 		FB0B8A701DCAB29100A8575F /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		FB0B8A711DCAB29100A8575F /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB237F221DCA9F2600591216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Packages/Gloss-1.1.0/Sources/Info.plist"; sourceTree = "<group>"; };
 		FB237F2B1DCAA09300591216 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = /Users/alumno/Desktop/JohoFeed/JohoFeed/Packages; sourceTree = "<absolute>"; };
 		FB237F2F1DCAA26400591216 /* project.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = project.xcworkspace; path = JohoFeed.xcodeproj/project.xcworkspace; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				FBCC189D1DB805EC004FC179 /* JohoFeed-Bridging-Header.h */,
 				FB8A28C61DCA78230047B6A1 /* CategoriesCollectionViewController.swift */,
 				FB237F221DCA9F2600591216 /* Info.plist */,
+				FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */,
 				FB0B8A2F1DCAB29100A8575F /* Helper */,
 				FB0B89441DCAA5AA00A8575F /* Packages */,
 			);
@@ -591,6 +594,7 @@
 				FB0B89AA1DCAA5AB00A8575F /* Gloss.swift in Sources */,
 				FB8A28D81DCA93C90047B6A1 /* User.swift in Sources */,
 				FBCC188A1DB7FDD9004FC179 /* AppDelegate.swift in Sources */,
+				FB0B8A961DCBB9EF00A8575F /* CategoryCollectionViewCell.swift in Sources */,
 				FB0B8A8C1DCAB29100A8575F /* MWFeedItem.m in Sources */,
 				FB0B8A8E1DCAB29100A8575F /* NSDate+InternetDateTime.m in Sources */,
 				FB0B8A8D1DCAB29100A8575F /* MWFeedParser.m in Sources */,
