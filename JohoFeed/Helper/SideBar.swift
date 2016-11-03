@@ -14,8 +14,8 @@ Optional protocol requirements can only be specified if your protocol is marked 
 
 @objc protocol SideBarDelegate{
     func sideBarDidSelectMenuButtonAtIndex(index:Int)
-    optional func sideBarWillOpen()
-    optional func sideBarWillClose()
+    @objc optional func sideBarWillOpen()
+    @objc optional func sideBarWillClose()
 }
 
 class SideBar: NSObject, SideBarTableViewControllerDelegate {
@@ -25,7 +25,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     let sideBarContainerView:UIView = UIView()
     let sideBarTableViewController:SideBarTableViewController = SideBarTableViewController()
     var animator:UIDynamicAnimator!
-    let origionView:UIView!
+    var origionView:UIView!
     var delegate:SideBarDelegate?
     var isSideBarOpen:Bool = false
     
@@ -45,11 +45,11 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         animator = UIDynamicAnimator(referenceView: origionView)
         
         let showGestureRecognizer:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
-        showGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right
+        showGestureRecognizer.direction = UISwipeGestureRecognizerDirection.right
         origionView.addGestureRecognizer(showGestureRecognizer)
         
         let hideGestureRecognizer:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
-        hideGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
+        hideGestureRecognizer.direction = UISwipeGestureRecognizerDirection.left
         
         // TODO: MAYBE PLACE THAT WITHIN ORIGIN
         origionView.addGestureRecognizer(hideGestureRecognizer)
@@ -59,15 +59,15 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     }
     
     func setupSideBar(){
-        sideBarContainerView.frame = CGRectMake(-barWidth-1, origionView.frame.origin.y, barWidth, origionView.frame.size.height)
-        sideBarContainerView.backgroundColor = UIColor.clearColor()
+        sideBarContainerView.frame = CGRect(x: -barWidth-1, y: origionView.frame.origin.y, width: barWidth, height: origionView.frame.size.height)
+        sideBarContainerView.backgroundColor = UIColor.clear
         sideBarContainerView.clipsToBounds = false
 
         
         
         origionView.addSubview(sideBarContainerView)
         
-        let blurView:UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.ExtraLight))
+        let blurView:UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.extraLight))
         blurView.frame = sideBarContainerView.bounds
         sideBarContainerView.addSubview(blurView)
         
@@ -75,8 +75,8 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         sideBarTableViewController.delegate = self
         sideBarTableViewController.tableView.frame = sideBarContainerView.bounds
         sideBarTableViewController.tableView.clipsToBounds = false
-        sideBarTableViewController.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        sideBarTableViewController.tableView.backgroundColor = UIColor.clearColor()
+        sideBarTableViewController.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        sideBarTableViewController.tableView.backgroundColor = UIColor.clear
         sideBarTableViewController.tableView.scrollsToTop = false
         sideBarTableViewController.tableView.contentInset = UIEdgeInsetsMake(sideBarTableViewTopInset, 0, 0, 0)
         
@@ -89,11 +89,11 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     
     func handleSwipe(recognizer:UISwipeGestureRecognizer){
         sideBarTableViewController.tableView.reloadData()
-        if recognizer.direction == UISwipeGestureRecognizerDirection.Left{
-            showSideBar(false)
+        if recognizer.direction == UISwipeGestureRecognizerDirection.left{
+            showSideBar(shouldOpen: false)
             delegate?.sideBarWillClose?()
         }else{
-            showSideBar(true)
+            showSideBar(shouldOpen: true)
             delegate?.sideBarWillOpen?()
         }
     }
@@ -107,17 +107,17 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         var boundaryX:CGFloat = (shouldOpen) ? barWidth : -barWidth - 1.0
         
         let gravityBehavior:UIGravityBehavior = UIGravityBehavior(items: [sideBarContainerView])
-        gravityBehavior.gravityDirection = CGVectorMake(gravityX, 0)
+        gravityBehavior.gravityDirection = CGVector(dx: gravityX, dy: 0)
         animator.addBehavior(gravityBehavior)
         
         
         let collisionBehavior:UICollisionBehavior = UICollisionBehavior(items: [sideBarContainerView])
-        collisionBehavior.addBoundaryWithIdentifier("menuBoundary", fromPoint: CGPointMake(boundaryX, 20.0),
-            toPoint: CGPointMake(boundaryX, origionView.frame.size.height))
+        collisionBehavior.addBoundary(withIdentifier: "menuBoundary" as NSCopying, from: CGPoint(x: boundaryX, y: 20.0),
+                                      to: CGPoint(x: boundaryX, y: origionView.frame.size.height))
         animator.addBehavior(collisionBehavior)
 
         
-        let pushBehavior:UIPushBehavior = UIPushBehavior(items: [sideBarContainerView], mode: UIPushBehaviorMode.Instantaneous)
+        let pushBehavior:UIPushBehavior = UIPushBehavior(items: [sideBarContainerView], mode: UIPushBehaviorMode.instantaneous)
         pushBehavior.magnitude = magnitude
         animator.addBehavior(pushBehavior)
         
@@ -129,8 +129,8 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     }
     
     func sideBarControllerDidSelectRow(indexPath: NSIndexPath) {
-        delegate?.sideBarDidSelectMenuButtonAtIndex(indexPath.row)
-        showSideBar(false)
+        delegate?.sideBarDidSelectMenuButtonAtIndex(index: indexPath.row)
+        showSideBar(shouldOpen: false)
     }
     
 }
