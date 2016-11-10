@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837775AD74F4803492940EDC /* Pods_JohoFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */; };
 		FB0B89811DCAA5AA00A8575F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FB0B89461DCAA5AA00A8575F /* .gitignore */; };
 		FB0B89821DCAA5AA00A8575F /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = FB0B89471DCAA5AA00A8575F /* .swift-version */; };
 		FB0B89831DCAA5AA00A8575F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = FB0B89481DCAA5AA00A8575F /* .travis.yml */; };
@@ -69,6 +70,9 @@
 		FBCC18911DB7FDD9004FC179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCC18901DB7FDD9004FC179 /* Assets.xcassets */; };
 		FBCC18941DB7FDD9004FC179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCC18921DB7FDD9004FC179 /* LaunchScreen.storyboard */; };
 		FBCC189C1DB80548004FC179 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC189B1DB80548004FC179 /* FeedTableViewController.swift */; };
+		FBD2C6881DD3E98300EBF34C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2C6871DD3E98300EBF34C /* LoginViewController.swift */; };
+		FBD2C68A1DD3E99300EBF34C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2C6891DD3E99300EBF34C /* SignupViewController.swift */; };
+		FBD2C6AC1DD4037200EBF34C /* Pods_JohoFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD2C6AB1DD4037200EBF34C /* Pods_JohoFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203D45DA4DD8855B87B75437 /* Pods-JohoFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohoFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed.release.xcconfig"; sourceTree = "<group>"; };
+		6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohoFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		739AE64855F8A8BFDF8BA0AC /* Pods-JohoFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohoFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0B89461DCAA5AA00A8575F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FB0B89471DCAA5AA00A8575F /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		FB0B89481DCAA5AA00A8575F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -193,7 +200,6 @@
 		FB237F221DCA9F2600591216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Packages/Gloss-1.1.0/Sources/Info.plist"; sourceTree = "<group>"; };
 		FB237F2B1DCAA09300591216 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = /Users/alumno/Desktop/JohoFeed/JohoFeed/Packages; sourceTree = "<absolute>"; };
 		FB237F2F1DCAA26400591216 /* project.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = project.xcworkspace; path = JohoFeed.xcodeproj/project.xcworkspace; sourceTree = "<group>"; };
-		FB237F351DCAA40C00591216 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = "JohoFeed/Packages/Gloss-1.1.0/Sources"; sourceTree = "<group>"; };
 		FB8A28C61DCA78230047B6A1 /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		FB8A28CF1DCA938D0047B6A1 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FB8A28D11DCA93AA0047B6A1 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -208,6 +214,10 @@
 		FBCC18951DB7FDD9004FC179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBCC189B1DB80548004FC179 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		FBCC189D1DB805EC004FC179 /* JohoFeed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JohoFeed-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBD2C6871DD3E98300EBF34C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FBD2C6891DD3E99300EBF34C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FBD2C6AB1DD4037200EBF34C /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_JohoFeed.framework; path = "../../Library/Developer/Xcode/DerivedData/JohoFeed-feqgqifutlaxjgapkebyibplvlto/Build/Products/Debug-iphonesimulator/Pods_JohoFeed.framework"; sourceTree = "<group>"; };
+		FBD2C6AD1DD4037A00EBF34C /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = "Pods/../build/Debug-iphoneos/KeychainSwift/KeychainSwift.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,12 +225,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD2C6AC1DD4037200EBF34C /* Pods_JohoFeed.framework in Frameworks */,
+				837775AD74F4803492940EDC /* Pods_JohoFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94DE76F396F2B248047A7E65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				739AE64855F8A8BFDF8BA0AC /* Pods-JohoFeed.debug.xcconfig */,
+				203D45DA4DD8855B87B75437 /* Pods-JohoFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB0B89441DCAA5AA00A8575F /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +380,10 @@
 		FB237F2E1DCAA26400591216 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBD2C6AD1DD4037A00EBF34C /* KeychainSwift.framework */,
+				FBD2C6AB1DD4037200EBF34C /* Pods_JohoFeed.framework */,
 				FB237F2F1DCAA26400591216 /* project.xcworkspace */,
+				6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,10 +403,10 @@
 		FBCC187D1DB7FDD9004FC179 = {
 			isa = PBXGroup;
 			children = (
-				FB237F351DCAA40C00591216 /* Sources */,
 				FBCC18881DB7FDD9004FC179 /* JohoFeed */,
 				FBCC18871DB7FDD9004FC179 /* Products */,
 				FB237F2E1DCAA26400591216 /* Frameworks */,
+				94DE76F396F2B248047A7E65 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -408,6 +432,8 @@
 				FB8A28C61DCA78230047B6A1 /* CategoriesCollectionViewController.swift */,
 				FB237F221DCA9F2600591216 /* Info.plist */,
 				FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */,
+				FBD2C6871DD3E98300EBF34C /* LoginViewController.swift */,
+				FBD2C6891DD3E99300EBF34C /* SignupViewController.swift */,
 				FB0B8A2F1DCAB29100A8575F /* Helper */,
 				FB0B89441DCAA5AA00A8575F /* Packages */,
 			);
@@ -421,9 +447,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBCC18981DB7FDD9004FC179 /* Build configuration list for PBXNativeTarget "JohoFeed" */;
 			buildPhases = (
+				F9D47F90791D9183CD7EB0A5 /* [CP] Check Pods Manifest.lock */,
 				FBCC18821DB7FDD9004FC179 /* Sources */,
 				FBCC18831DB7FDD9004FC179 /* Frameworks */,
 				FBCC18841DB7FDD9004FC179 /* Resources */,
+				CF162B701E37DF5292B9B647 /* [CP] Embed Pods Frameworks */,
+				37E9C8C22D13B1B12CA611A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -573,6 +602,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37E9C8C22D13B1B12CA611A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF162B701E37DF5292B9B647 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D47F90791D9183CD7EB0A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBCC18821DB7FDD9004FC179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -588,9 +665,11 @@
 				FB8A28D21DCA93AA0047B6A1 /* Article.swift in Sources */,
 				FB8A28D41DCA93B90047B6A1 /* Comment.swift in Sources */,
 				FB0B89A91DCAA5AB00A8575F /* ExtensionDictionary.swift in Sources */,
+				FBD2C68A1DD3E99300EBF34C /* SignupViewController.swift in Sources */,
 				FB0B89A51DCAA5AA00A8575F /* README.md in Sources */,
 				FB0B89AC1DCAA5AB00A8575F /* Operators.swift in Sources */,
 				FB0B8A8B1DCAB29100A8575F /* MWFeedInfo.m in Sources */,
+				FBD2C6881DD3E98300EBF34C /* LoginViewController.swift in Sources */,
 				FB0B89AA1DCAA5AB00A8575F /* Gloss.swift in Sources */,
 				FB8A28D81DCA93C90047B6A1 /* User.swift in Sources */,
 				FBCC188A1DB7FDD9004FC179 /* AppDelegate.swift in Sources */,
@@ -752,11 +831,19 @@
 		};
 		FBCC18991DB7FDD9004FC179 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739AE64855F8A8BFDF8BA0AC /* Pods-JohoFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KeychainSwift",
+				);
 				INFOPLIST_FILE = JohoFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = evanjrz.JohoFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../.build/debug";
@@ -768,11 +855,19 @@
 		};
 		FBCC189A1DB7FDD9004FC179 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203D45DA4DD8855B87B75437 /* Pods-JohoFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KeychainSwift",
+				);
 				INFOPLIST_FILE = JohoFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = evanjrz.JohoFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../.build/debug";
