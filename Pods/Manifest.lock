@@ -1,12 +1,15 @@
 PODS:
+  - Gloss (1.1.0)
   - KeychainSwift (7.0.0)
 
 DEPENDENCIES:
+  - Gloss (~> 1.1)
   - KeychainSwift (~> 7.0)
 
 SPEC CHECKSUMS:
+  Gloss: a8340c124ff69c5d1c12e06c252373f4a16d2958
   KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
 
-PODFILE CHECKSUM: f0d9d971d6b84453e612f90902aadfb54b334d1f
+PODFILE CHECKSUM: f0f7bfad887ac445bc4efa9096e0c68875d84bfc
 
 COCOAPODS: 1.1.1

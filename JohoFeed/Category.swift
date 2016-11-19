@@ -6,6 +6,8 @@
 //  Copyright © 2016 Evan Juárez. All rights reserved.
 //
 
+import Gloss
+
 public struct Category : Decodable {
     
     public let title : String?

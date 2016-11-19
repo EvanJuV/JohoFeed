@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08AA89D020B5C4FD74D1529A3E972AB9 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F354EBBE9626DCC5308CFA4EB01BF4 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30E9254968BE64C345CD1B2E3886AD44 /* Pods-JohoFeed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D1E661FB53703E636BB7313C2CBF5B /* Pods-JohoFeed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A14D1DFA316CE30A995088DC6EE1CA2 /* Pods-JohoFeed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D02FC7D0A6040237204E2E556E19DD /* Pods-JohoFeed-dummy.m */; };
-		7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D3DB4C78A555CB6EA84ED414869588 /* TegKeychainConstants.swift */; };
-		AD0E8D5F58B0B824D2631BDA9D541DFE /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481232004FB351E7AADE6CB78C5CC57 /* KeychainSwift-dummy.m */; };
-		B3B67B0D1E49042DA1B9DBE4B4D9F084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		04774211E0676BD892D48FECA3FC884A /* Pods-JohoFeed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D1E661FB53703E636BB7313C2CBF5B /* Pods-JohoFeed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AA89D020B5C4FD74D1529A3E972AB9 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E658B5352D388755EF27F32098974F60 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D609C34A03AFF800C2A9F793690DD8 /* Encoder.swift */; };
+		3145CF29D7BDDB9415B3288BF74BEABE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08486F138F8238F61309C3C6E5B8A247 /* Operators.swift */; };
+		527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 861B885D8E899CF6574F158163A8F8FE /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A805F12F7A5A0BA17C4A53D5D8ABF5A3 /* TegKeychainConstants.swift */; };
+		7D90599C473273BE8106A09239978406 /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4F00B40EE08EA631B117D5E684D9A /* Gloss.swift */; };
+		9B68CFD60EAEC8F9A96105B8E5A05904 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AD0E8D5F58B0B824D2631BDA9D541DFE /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C09897A99795B2D96845791D393DC4DE /* KeychainSwift-dummy.m */; };
+		C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6ADD4AF78590CCB4F5BB6B6720A078 /* ExtensionDictionary.swift */; };
 		C8865DA7BD76026FC9782E04D6D6BA76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35B9D820C0C1B983E5255DCC7827D /* KeychainSwift.swift */; };
-		EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F746AC8B8C005635A40E69DA08EC026 /* KeychainSwiftAccessOptions.swift */; };
+		CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B40629959D50A0777E8D1D3C9BF6F /* KeychainSwift.swift */; };
+		E1247BDD2195F9EA1EA71B8583C5BDED /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9B74B4B5886D84A5DD634A1F66496 /* Decoder.swift */; };
+		E6679E50B1801DB62D44D7E55D6379FD /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1599F61D952F59AA88B97D7A0DBC8D5 /* ExtensionArray.swift */; };
+		EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DAECEACFCB90AE6D80C5D6AF0E06A8 /* KeychainSwiftAccessOptions.swift */; };
+		F74861D230E8EA85A5FEED680D155C22 /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A8BA107EB2A4270FD2571B97D4CEC1 /* Gloss-dummy.m */; };
+		FE05ADF94E76CC58879EDC321ED5DD01 /* Pods-JohoFeed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D02FC7D0A6040237204E2E556E19DD /* Pods-JohoFeed-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FC77728025D53B8907DBD1B13EA0149B /* PBXContainerItemProxy */ = {
+		3C96CE0A1D9DC03943C533C6B1495EF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C69D9B6A709F788E7F5A5E2BDCF612;
+			remoteInfo = Gloss;
+		};
+		6BBFC56F4DF5D2526E545AAFA8ACA1E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -29,29 +45,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0481232004FB351E7AADE6CB78C5CC57 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
-		0FCAC83AF36BBAE86584BC379EEC19CD /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
-		160D90BEF9A3EA3970B78B47095AFFD1 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
-		28BEF97E395384F7E9A1080534DB8A3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BF0FC9709DCBBF77AF94B0B01C50681 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37D35B9D820C0C1B983E5255DCC7827D /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
-		39F354EBBE9626DCC5308CFA4EB01BF4 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		08486F138F8238F61309C3C6E5B8A247 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		0E6ADD4AF78590CCB4F5BB6B6720A078 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
+		0EA0440E411E56CEDDE3E3816DD92CDC /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
+		11D609C34A03AFF800C2A9F793690DD8 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
+		34599A0BBFE47ACAAC0152EF44C684F1 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A74AC8C500EE80BFA58C25D168A9604 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F51B725FC1E8A083510F85D646D1024 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41388D05D28823D889B0169E0F6FB2EC /* Pods-JohoFeed-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JohoFeed-resources.sh"; sourceTree = "<group>"; };
 		43B8498270389BF5050EF5FD5804F4CB /* Pods-JohoFeed-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JohoFeed-frameworks.sh"; sourceTree = "<group>"; };
-		7F746AC8B8C005635A40E69DA08EC026 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
-		85D3DB4C78A555CB6EA84ED414869588 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
-		901DF549015BF7A553E10C9D2AA0B21F /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JohoFeed.framework; path = "Pods-JohoFeed.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DD05A4186BE9A8AFB9AE23EA505FA7 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF9B74B4B5886D84A5DD634A1F66496 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
+		553B40629959D50A0777E8D1D3C9BF6F /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		5D15F2E24F271B5BBEEE09E8133F7E41 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
+		861B885D8E899CF6574F158163A8F8FE /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
+		8BB4F00B40EE08EA631B117D5E684D9A /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
+		8F64E912C759548CCB859C8EFE3A7E86 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99D1E661FB53703E636BB7313C2CBF5B /* Pods-JohoFeed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JohoFeed-umbrella.h"; sourceTree = "<group>"; };
 		A2C265354BE6B3246D3B690EE386ED30 /* Pods-JohoFeed-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JohoFeed-acknowledgements.plist"; sourceTree = "<group>"; };
-		A510E4EDFBA8FD0DF0B7A0020A2256BB /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
 		A566A4726F917ECAEAE7ADD797113ED8 /* Pods-JohoFeed-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JohoFeed-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A805F12F7A5A0BA17C4A53D5D8ABF5A3 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
 		A8121F1EE8B982081BA0922C60688C4F /* Pods-JohoFeed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JohoFeed.modulemap"; sourceTree = "<group>"; };
 		B0F6A9C80CEF0422143073E9F4B09CDC /* Pods-JohoFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JohoFeed.release.xcconfig"; sourceTree = "<group>"; };
 		B4D02FC7D0A6040237204E2E556E19DD /* Pods-JohoFeed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JohoFeed-dummy.m"; sourceTree = "<group>"; };
+		C09897A99795B2D96845791D393DC4DE /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		C6288FD5E1BEE7135B754B4D6DAF252E /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		C94A607BF9B0A11BF598DEA4CC4BB1B9 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDE51AE3734240D1E090861FB5B49A97 /* Pods-JohoFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JohoFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		D4243DAD1D4AB2EB3B6B4A77180B6917 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DAECEACFCB90AE6D80C5D6AF0E06A8 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		E1599F61D952F59AA88B97D7A0DBC8D5 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
+		E5A8BA107EB2A4270FD2571B97D4CEC1 /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		E658B5352D388755EF27F32098974F60 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		E66667CBE4834E4DBE7E5E0BCFCD93DB /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Gloss.modulemap; sourceTree = "<group>"; };
+		EFB269C2F55FDD9F793F46F099A4184B /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JohoFeed.framework; path = "Pods-JohoFeed.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +92,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9BCBFABFBA28FFCF34F04F0620C6181 /* Frameworks */ = {
+		9CD45FF2A64C73D2ECD5021A9F12EEF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B67B0D1E49042DA1B9DBE4B4D9F084 /* Foundation.framework in Frameworks */,
+				527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8C4731CEF767E3649C2E1BD8C0DCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68CFD60EAEC8F9A96105B8E5A05904 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,23 +119,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4BEAEF86F98CDC35EEF36BEF0F812492 /* Pods */ = {
+		2A63E2D6442F9B8023C36900E9DD3A90 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B95E45AFB54ACF1F8E98C8944AA5AB5 /* KeychainSwift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6819D587481D599BCB921FF34CD37AD9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				28BEF97E395384F7E9A1080534DB8A3C /* Info.plist */,
-				0FCAC83AF36BBAE86584BC379EEC19CD /* KeychainSwift.modulemap */,
-				160D90BEF9A3EA3970B78B47095AFFD1 /* KeychainSwift.xcconfig */,
-				0481232004FB351E7AADE6CB78C5CC57 /* KeychainSwift-dummy.m */,
-				A510E4EDFBA8FD0DF0B7A0020A2256BB /* KeychainSwift-prefix.pch */,
-				39F354EBBE9626DCC5308CFA4EB01BF4 /* KeychainSwift-umbrella.h */,
+				3F51B725FC1E8A083510F85D646D1024 /* Info.plist */,
+				C6288FD5E1BEE7135B754B4D6DAF252E /* KeychainSwift.modulemap */,
+				C94A607BF9B0A11BF598DEA4CC4BB1B9 /* KeychainSwift.xcconfig */,
+				C09897A99795B2D96845791D393DC4DE /* KeychainSwift-dummy.m */,
+				8F64E912C759548CCB859C8EFE3A7E86 /* KeychainSwift-prefix.pch */,
+				E658B5352D388755EF27F32098974F60 /* KeychainSwift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KeychainSwift";
@@ -112,16 +141,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7B95E45AFB54ACF1F8E98C8944AA5AB5 /* KeychainSwift */ = {
+		75E6E6EED43EF6E3FF0CB526671689B4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				37D35B9D820C0C1B983E5255DCC7827D /* KeychainSwift.swift */,
-				7F746AC8B8C005635A40E69DA08EC026 /* KeychainSwiftAccessOptions.swift */,
-				85D3DB4C78A555CB6EA84ED414869588 /* TegKeychainConstants.swift */,
-				6819D587481D599BCB921FF34CD37AD9 /* Support Files */,
+				E66667CBE4834E4DBE7E5E0BCFCD93DB /* Gloss.modulemap */,
+				5D15F2E24F271B5BBEEE09E8133F7E41 /* Gloss.xcconfig */,
+				E5A8BA107EB2A4270FD2571B97D4CEC1 /* Gloss-dummy.m */,
+				0EA0440E411E56CEDDE3E3816DD92CDC /* Gloss-prefix.pch */,
+				861B885D8E899CF6574F158163A8F8FE /* Gloss-umbrella.h */,
+				3A74AC8C500EE80BFA58C25D168A9604 /* Info.plist */,
 			);
-			name = KeychainSwift;
-			path = KeychainSwift;
+			name = "Support Files";
+			path = "../Target Support Files/Gloss";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -129,19 +160,44 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4BEAEF86F98CDC35EEF36BEF0F812492 /* Pods */,
-				81903281B2B5FE2A275132C6C8C2103B /* Products */,
+				B0BF5D74F7C1BC0B52C5BCE34F1314CA /* Pods */,
+				834A12AA08802059E0DCF3F5DE14FD97 /* Products */,
 				0B8C08F8EBF6D85EF0AAEDC6C7035737 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81903281B2B5FE2A275132C6C8C2103B /* Products */ = {
+		834A12AA08802059E0DCF3F5DE14FD97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BF0FC9709DCBBF77AF94B0B01C50681 /* KeychainSwift.framework */,
-				901DF549015BF7A553E10C9D2AA0B21F /* Pods_JohoFeed.framework */,
+				49DD05A4186BE9A8AFB9AE23EA505FA7 /* Gloss.framework */,
+				34599A0BBFE47ACAAC0152EF44C684F1 /* KeychainSwift.framework */,
+				EFB269C2F55FDD9F793F46F099A4184B /* Pods_JohoFeed.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B0BF5D74F7C1BC0B52C5BCE34F1314CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B54CCC51B67C24E8F741A76920D3F97D /* Gloss */,
+				C561E50175FE64CD29B771AC8D33AAA7 /* KeychainSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B54CCC51B67C24E8F741A76920D3F97D /* Gloss */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9B74B4B5886D84A5DD634A1F66496 /* Decoder.swift */,
+				11D609C34A03AFF800C2A9F793690DD8 /* Encoder.swift */,
+				E1599F61D952F59AA88B97D7A0DBC8D5 /* ExtensionArray.swift */,
+				0E6ADD4AF78590CCB4F5BB6B6720A078 /* ExtensionDictionary.swift */,
+				8BB4F00B40EE08EA631B117D5E684D9A /* Gloss.swift */,
+				08486F138F8238F61309C3C6E5B8A247 /* Operators.swift */,
+				75E6E6EED43EF6E3FF0CB526671689B4 /* Support Files */,
+			);
+			name = Gloss;
+			path = Gloss;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -150,6 +206,18 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C561E50175FE64CD29B771AC8D33AAA7 /* KeychainSwift */ = {
+			isa = PBXGroup;
+			children = (
+				553B40629959D50A0777E8D1D3C9BF6F /* KeychainSwift.swift */,
+				D4DAECEACFCB90AE6D80C5D6AF0E06A8 /* KeychainSwiftAccessOptions.swift */,
+				A805F12F7A5A0BA17C4A53D5D8ABF5A3 /* TegKeychainConstants.swift */,
+				2A63E2D6442F9B8023C36900E9DD3A90 /* Support Files */,
+			);
+			name = KeychainSwift;
+			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
 		E569B7E3D749E63C65721A0BCF4F5B2F /* Pods-JohoFeed */ = {
@@ -173,11 +241,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0029CE66835383A7B09D4FEA2188A1BE /* Headers */ = {
+		710C45D04A9E367DB261E0C9277EC7A4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E9254968BE64C345CD1B2E3886AD44 /* Pods-JohoFeed-umbrella.h in Headers */,
+				04774211E0676BD892D48FECA3FC884A /* Pods-JohoFeed-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96060652D1C569EAB9ECD71C133FE3ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,25 +282,43 @@
 			);
 			name = KeychainSwift;
 			productName = KeychainSwift;
-			productReference = 2BF0FC9709DCBBF77AF94B0B01C50681 /* KeychainSwift.framework */;
+			productReference = 34599A0BBFE47ACAAC0152EF44C684F1 /* KeychainSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		41B4A447FCBEA74B3E9B16E352228D3E /* Pods-JohoFeed */ = {
+		39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CC6557167FE85C84B2A4A58554D22C9 /* Build configuration list for PBXNativeTarget "Pods-JohoFeed" */;
+			buildConfigurationList = B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */;
 			buildPhases = (
-				72E53A76F897A75235C78D0818902A76 /* Sources */,
-				D9BCBFABFBA28FFCF34F04F0620C6181 /* Frameworks */,
-				0029CE66835383A7B09D4FEA2188A1BE /* Headers */,
+				7CB34417E8829C4BAA9341FCCFAD446E /* Sources */,
+				9CD45FF2A64C73D2ECD5021A9F12EEF0 /* Frameworks */,
+				96060652D1C569EAB9ECD71C133FE3ED /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EBB365DC44B85083D00675B1DFB1FA89 /* PBXTargetDependency */,
+			);
+			name = Gloss;
+			productName = Gloss;
+			productReference = 49DD05A4186BE9A8AFB9AE23EA505FA7 /* Gloss.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E5ECBEF2233098258C7A07683E1ACAE /* Pods-JohoFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D58CE4746A4B3C7ED354AB252B1132 /* Build configuration list for PBXNativeTarget "Pods-JohoFeed" */;
+			buildPhases = (
+				71BA6AC322CA53EFED0E02FD4966DE25 /* Sources */,
+				DF8C4731CEF767E3649C2E1BD8C0DCF4 /* Frameworks */,
+				710C45D04A9E367DB261E0C9277EC7A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E86A599D5F3DF364E1E3D083B73C577 /* PBXTargetDependency */,
+				C3889E63D78738ACCB3B1A74F91988EC /* PBXTargetDependency */,
 			);
 			name = "Pods-JohoFeed";
 			productName = "Pods-JohoFeed";
-			productReference = 901DF549015BF7A553E10C9D2AA0B21F /* Pods_JohoFeed.framework */;
+			productReference = EFB269C2F55FDD9F793F46F099A4184B /* Pods_JohoFeed.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -244,22 +338,37 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 81903281B2B5FE2A275132C6C8C2103B /* Products */;
+			productRefGroup = 834A12AA08802059E0DCF3F5DE14FD97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */,
 				38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */,
-				41B4A447FCBEA74B3E9B16E352228D3E /* Pods-JohoFeed */,
+				4E5ECBEF2233098258C7A07683E1ACAE /* Pods-JohoFeed */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		72E53A76F897A75235C78D0818902A76 /* Sources */ = {
+		71BA6AC322CA53EFED0E02FD4966DE25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A14D1DFA316CE30A995088DC6EE1CA2 /* Pods-JohoFeed-dummy.m in Sources */,
+				FE05ADF94E76CC58879EDC321ED5DD01 /* Pods-JohoFeed-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB34417E8829C4BAA9341FCCFAD446E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1247BDD2195F9EA1EA71B8583C5BDED /* Decoder.swift in Sources */,
+				0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */,
+				E6679E50B1801DB62D44D7E55D6379FD /* ExtensionArray.swift in Sources */,
+				C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */,
+				F74861D230E8EA85A5FEED680D155C22 /* Gloss-dummy.m in Sources */,
+				7D90599C473273BE8106A09239978406 /* Gloss.swift in Sources */,
+				3145CF29D7BDDB9415B3288BF74BEABE /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,18 +386,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EBB365DC44B85083D00675B1DFB1FA89 /* PBXTargetDependency */ = {
+		9E86A599D5F3DF364E1E3D083B73C577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = 39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */;
+			targetProxy = 3C96CE0A1D9DC03943C533C6B1495EF8 /* PBXContainerItemProxy */;
+		};
+		C3889E63D78738ACCB3B1A74F91988EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainSwift;
 			target = 38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */;
-			targetProxy = FC77728025D53B8907DBD1B13EA0149B /* PBXContainerItemProxy */;
+			targetProxy = 6BBFC56F4DF5D2526E545AAFA8ACA1E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0D0A3CA59FFA5283D94B00E4E39C8AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 160D90BEF9A3EA3970B78B47095AFFD1 /* KeychainSwift.xcconfig */;
+			baseConfigurationReference = C94A607BF9B0A11BF598DEA4CC4BB1B9 /* KeychainSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -362,75 +477,7 @@
 			};
 			name = Debug;
 		};
-		28067CE147FE5D91C29B35EB0F924611 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0F6A9C80CEF0422143073E9F4B09CDC /* Pods-JohoFeed.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JohoFeed/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JohoFeed/Pods-JohoFeed.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JohoFeed;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6F8B8E4905636FBC46D6E71C970E1960 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 160D90BEF9A3EA3970B78B47095AFFD1 /* KeychainSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KeychainSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB9D401DE3A7D0ED1B38BB9626A25440 /* Debug */ = {
+		5F307F55B4372B35E7F11EF98EECDCD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDE51AE3734240D1E090861FB5B49A97 /* Pods-JohoFeed.debug.xcconfig */;
 			buildSettings = {
@@ -465,6 +512,139 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		6F8B8E4905636FBC46D6E71C970E1960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C94A607BF9B0A11BF598DEA4CC4BB1B9 /* KeychainSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B7E115F88DC46A825B3C860419081BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F6A9C80CEF0422143073E9F4B09CDC /* Pods-JohoFeed.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JohoFeed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JohoFeed/Pods-JohoFeed.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JohoFeed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9302130DB76983880CD5847320790D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D15F2E24F271B5BBEEE09E8133F7E41 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99359DD368BB6756AAAE391C83962860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D15F2E24F271B5BBEEE09E8133F7E41 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -509,6 +689,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		15D58CE4746A4B3C7ED354AB252B1132 /* Build configuration list for PBXNativeTarget "Pods-JohoFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F307F55B4372B35E7F11EF98EECDCD5 /* Debug */,
+				7B7E115F88DC46A825B3C860419081BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		16C5D5A8E6CDB4211B0732F819F55A47 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -527,11 +716,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CC6557167FE85C84B2A4A58554D22C9 /* Build configuration list for PBXNativeTarget "Pods-JohoFeed" */ = {
+		B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB9D401DE3A7D0ED1B38BB9626A25440 /* Debug */,
-				28067CE147FE5D91C29B35EB0F924611 /* Release */,
+				9302130DB76983880CD5847320790D12 /* Debug */,
+				99359DD368BB6756AAAE391C83962860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

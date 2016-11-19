@@ -6,7 +6,7 @@
 //  Copyright © 2016 Evan Juárez. All rights reserved.
 //
 
-import Foundation
+import Gloss
 
 public struct Feed : Decodable {
     

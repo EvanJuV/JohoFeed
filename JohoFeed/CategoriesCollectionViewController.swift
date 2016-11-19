@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gloss
 
 private let reuseIdentifier = "category"
 
@@ -15,12 +16,12 @@ class CategoriesCollectionViewController: UICollectionViewController {
     weak var activityIndicatorView: UIActivityIndicatorView!
     
     fileprivate var arrayCategories : [Category] = []
-    let urlCategories = URL(string: "http://10.15.219.97:3000/api/categories")
+    let urlCategories = URL(string: "\(Connection.serverHost)/api/categories")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Loading"
+        self.title = "Loading"
         let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
         collectionView?.backgroundView = activityIndicatorView
         self.activityIndicatorView = activityIndicatorView
@@ -38,7 +39,7 @@ class CategoriesCollectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         
         activityIndicatorView.startAnimating()
-        
+
         // Make asynchrounous call to API
         let task = URLSession.shared.dataTask(with: urlCategories! as URL) { data, response, error in
             
@@ -46,6 +47,20 @@ class CategoriesCollectionViewController: UICollectionViewController {
             
             guard error == nil else {
                 print(error)
+                
+                OperationQueue.main.addOperation {
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "login")
+                    let alert = UIAlertController(title: "Error", message: "Error on request", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "OK", style: .cancel, handler: { UIAlertAction in
+
+                    })
+
+                    alert.addAction(action)
+                    
+                    self.show(vc!, sender: self)
+                    self.show(alert, sender: self)
+                }
+                
                 return
             }
             guard let data = data else {
@@ -70,10 +85,11 @@ class CategoriesCollectionViewController: UICollectionViewController {
             }
             
             // Remove spinner and show data
+            self.title = "Categories"
             self.activityIndicatorView.stopAnimating()
             self.collectionView!.reloadData()
         }
-        
+
         task.resume()
     }
 
@@ -82,15 +98,17 @@ class CategoriesCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if segue.identifier == "articles" {
+            
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
 

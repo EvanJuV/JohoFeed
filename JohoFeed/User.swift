@@ -6,6 +6,8 @@
 //  Copyright © 2016 Evan Juárez. All rights reserved.
 //
 
+import Gloss
+
 public struct User: Decodable {
     
     public let username : String

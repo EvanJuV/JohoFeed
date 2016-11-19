@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
     let keychain = KeychainSwift()
-    let urlLogin = URL(string: "http://10.15.217.188:3000/api/auth")
+    let urlLogin = URL(string: "\(Connection.serverHost)/api/auth")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,11 +122,18 @@ class LoginViewController: UIViewController {
                     // Cast JSON as array
                     let jsonLoginData = jsonRes as! NSDictionary
                     
-                    self.keychain.set(jsonLoginData["token"] as! String, forKey: "access-token")
+                    let token = jsonLoginData["token"] as! String
+                    
+                    let val = self.keychain.set(jsonLoginData["token"] as! String, forKey: "access-token")
                     let retrievedToken = self.keychain.get("access-token")
                     
-                    print(jsonLoginData)
+                    if let value = token.data(using: String.Encoding.utf8) {
+                        print("si se puede")
+                    }
+                    print("hola".data(using: String.Encoding.utf8))
                     
+                    let recoveredVal = self.keychain.get("access-token")
+                    print(recoveredVal)
                     OperationQueue.main.addOperation {
                         
                         if (jsonLoginData["success"] as? Bool)! {

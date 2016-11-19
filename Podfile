@@ -7,4 +7,5 @@ target 'JohoFeed' do
 
   # Pods for JohoFeed
   pod 'KeychainSwift', '~> 7.0'
+  pod 'Gloss', '~> 1.1'
 end

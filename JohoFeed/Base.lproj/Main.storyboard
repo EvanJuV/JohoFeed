@@ -73,7 +73,7 @@
                                 <connections>
                                     <outlet property="imgView" destination="KSa-wT-1fB" id="7D5-gV-qhm"/>
                                     <outlet property="lbTitle" destination="TNb-Tb-oaC" id="sOa-Df-vWL"/>
-                                    <segue destination="zjN-IW-aNT" kind="show" id="5XX-7L-fgQ"/>
+                                    <segue destination="zjN-IW-aNT" kind="show" identifier="articles" id="5XX-7L-fgQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -167,7 +167,7 @@
         <!--Login View Controller-->
         <scene sceneID="mwz-Rk-hol">
             <objects>
-                <viewController id="vV3-Cw-iLX" customClass="LoginViewController" customModule="JohoFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="vV3-Cw-iLX" customClass="LoginViewController" customModule="JohoFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KEC-LG-WeV"/>
                         <viewControllerLayoutGuide type="bottom" id="dvr-kV-GpI"/>
@@ -258,6 +258,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MPg-na-TIM"/>
+        <segue reference="K2Z-Xc-wom"/>
     </inferredMetricsTieBreakers>
 </document>

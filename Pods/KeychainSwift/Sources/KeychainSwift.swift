@@ -81,7 +81,7 @@ open class KeychainSwift {
   @discardableResult
   open func set(_ value: Data, forKey key: String,
     withAccess access: KeychainSwiftAccessOptions? = nil) -> Bool {
-    
+
     delete(key) // Delete any existing key before saving it
 
     let accessible = access?.value ?? KeychainSwiftAccessOptions.defaultOption.value
