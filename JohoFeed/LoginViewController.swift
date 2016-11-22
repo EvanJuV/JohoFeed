@@ -8,6 +8,7 @@
 
 import UIKit
 import KeychainSwift
+import Gloss
 
 class LoginViewController: UIViewController {
 
@@ -51,7 +52,7 @@ class LoginViewController: UIViewController {
                 let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
                     
                     guard error == nil else {
-                        print(error)
+                        print(error!)
                         return
                     }
                     guard let data = data else {
@@ -88,8 +89,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: AnyObject) {
-        
-        if tfUsername.text != nil && tfPassword.text != nil {
+
+        if tfUsername.text != "" && tfPassword.text != "" {
             
             let json = ["username": tfUsername.text!, "password": tfPassword.text!] as [String : Any]
             
@@ -108,7 +109,7 @@ class LoginViewController: UIViewController {
                 let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
                     
                     guard error == nil else {
-                        print(error)
+                        print(error!)
                         return
                     }
                     guard let data = data else {
@@ -122,6 +123,19 @@ class LoginViewController: UIViewController {
                     // Cast JSON as array
                     let jsonLoginData = jsonRes as! NSDictionary
                     
+                    let success = jsonLoginData["success"] as! Bool
+
+                    guard success else {
+                        OperationQueue.main.addOperation {
+                            let alert = UIAlertController(title: "Error", message: "Username and/or password are invalid", preferredStyle: .alert)
+                            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            alert.addAction(accion)
+                            self.show(alert, sender: self)
+                        }
+                        return
+                        
+                    }
+                    
                     let token = jsonLoginData["token"] as! String
                     
                     let val = self.keychain.set(jsonLoginData["token"] as! String, forKey: "access-token")
@@ -134,6 +148,11 @@ class LoginViewController: UIViewController {
                     
                     let recoveredVal = self.keychain.get("access-token")
                     print(recoveredVal)
+                    
+                    // Assign singleton user
+                    let recoveredUser = User(json: jsonLoginData["user"] as! JSON)
+                    UserSingleton.sharedInstance.user = recoveredUser!
+                    
                     OperationQueue.main.addOperation {
                         
                         if (jsonLoginData["success"] as? Bool)! {

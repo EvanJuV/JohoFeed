@@ -9,5 +9,5 @@
 import UIKit
 
 class Connection: NSObject {
-    static let serverHost = "http://10.15.216.206:3000"
+    static let serverHost = "http://192.168.15.8:3000"
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34300CE31DE2F0310097AABB /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34300CE21DE2F0310097AABB /* ArticleViewController.swift */; };
+		3439FC461DE3743A009B811A /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC451DE3743A009B811A /* FeedTableViewCell.swift */; };
+		3439FC481DE392E3009B811A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC471DE392E3009B811A /* UILabelExtension.swift */; };
+		3439FC4A1DE3F06E009B811A /* FeedsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC491DE3F06E009B811A /* FeedsCollectionViewController.swift */; };
+		3439FC4C1DE4082F009B811A /* FeedArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC4B1DE4082F009B811A /* FeedArticlesTableViewController.swift */; };
+		3439FC4E1DE40C88009B811A /* FeedArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC4D1DE40C88009B811A /* FeedArticleViewController.swift */; };
+		3439FC501DE45A45009B811A /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC4F1DE45A45009B811A /* UserSingleton.swift */; };
 		837775AD74F4803492940EDC /* Pods_JohoFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */; };
 		FB0B8A731DCAB29100A8575F /* ARChromeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A311DCAB29100A8575F /* ARChromeActivity.m */; };
 		FB0B8A741DCAB29100A8575F /* ARChromeActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0B8A321DCAB29100A8575F /* ARChromeActivity.png */; };
@@ -41,7 +48,6 @@
 		FB0B8A911DCAB29100A8575F /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A701DCAB29100A8575F /* SideBar.swift */; };
 		FB0B8A921DCAB29100A8575F /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A711DCAB29100A8575F /* SideBarTableViewController.swift */; };
 		FB0B8A961DCBB9EF00A8575F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */; };
-		FB237F2C1DCAA09300591216 /* Packages in Resources */ = {isa = PBXBuildFile; fileRef = FB237F2B1DCAA09300591216 /* Packages */; };
 		FB8A28C71DCA78230047B6A1 /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A28C61DCA78230047B6A1 /* CategoriesCollectionViewController.swift */; };
 		FB8A28D01DCA938D0047B6A1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A28CF1DCA938D0047B6A1 /* Category.swift */; };
 		FB8A28D21DCA93AA0047B6A1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A28D11DCA93AA0047B6A1 /* Article.swift */; };
@@ -61,6 +67,13 @@
 
 /* Begin PBXFileReference section */
 		203D45DA4DD8855B87B75437 /* Pods-JohoFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohoFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed.release.xcconfig"; sourceTree = "<group>"; };
+		34300CE21DE2F0310097AABB /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		3439FC451DE3743A009B811A /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		3439FC471DE392E3009B811A /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		3439FC491DE3F06E009B811A /* FeedsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsCollectionViewController.swift; sourceTree = "<group>"; };
+		3439FC4B1DE4082F009B811A /* FeedArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedArticlesTableViewController.swift; sourceTree = "<group>"; };
+		3439FC4D1DE40C88009B811A /* FeedArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedArticleViewController.swift; sourceTree = "<group>"; };
+		3439FC4F1DE45A45009B811A /* UserSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohoFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		739AE64855F8A8BFDF8BA0AC /* Pods-JohoFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohoFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0B8A301DCAB29100A8575F /* ARChromeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARChromeActivity.h; sourceTree = "<group>"; };
@@ -125,7 +138,6 @@
 		FB0B8A701DCAB29100A8575F /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		FB0B8A711DCAB29100A8575F /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		FB237F2B1DCAA09300591216 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = /Users/alumno/Desktop/JohoFeed/JohoFeed/Packages; sourceTree = "<absolute>"; };
 		FB237F2F1DCAA26400591216 /* project.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = project.xcworkspace; path = JohoFeed.xcodeproj/project.xcworkspace; sourceTree = "<group>"; };
 		FB8A28C61DCA78230047B6A1 /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		FB8A28CF1DCA938D0047B6A1 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -202,7 +214,8 @@
 				FB0B8A701DCAB29100A8575F /* SideBar.swift */,
 				FB0B8A711DCAB29100A8575F /* SideBarTableViewController.swift */,
 			);
-			path = Helper;
+			name = Helper;
+			path = JohoFeed/Helper;
 			sourceTree = "<group>";
 		};
 		FB0B8A381DCAB29100A8575F /* Assets */ = {
@@ -283,6 +296,11 @@
 				FB0B8A951DCBB9EF00A8575F /* CategoryCollectionViewCell.swift */,
 				FBD2C6871DD3E98300EBF34C /* LoginViewController.swift */,
 				FBD2C6891DD3E99300EBF34C /* SignupViewController.swift */,
+				34300CE21DE2F0310097AABB /* ArticleViewController.swift */,
+				3439FC451DE3743A009B811A /* FeedTableViewCell.swift */,
+				3439FC491DE3F06E009B811A /* FeedsCollectionViewController.swift */,
+				3439FC4B1DE4082F009B811A /* FeedArticlesTableViewController.swift */,
+				3439FC4D1DE40C88009B811A /* FeedArticleViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -292,6 +310,7 @@
 			children = (
 				FBCC18881DB7FDD9004FC179 /* JohoFeed */,
 				FBCC18871DB7FDD9004FC179 /* Products */,
+				FB0B8A2F1DCAB29100A8575F /* Helper */,
 				FB237F2E1DCAA26400591216 /* Frameworks */,
 				94DE76F396F2B248047A7E65 /* Pods */,
 			);
@@ -317,7 +336,8 @@
 				FBCC18951DB7FDD9004FC179 /* Info.plist */,
 				FBCC189D1DB805EC004FC179 /* JohoFeed-Bridging-Header.h */,
 				FBB631ED1DDFEC1C009C00E4 /* Connection.swift */,
-				FB0B8A2F1DCAB29100A8575F /* Helper */,
+				3439FC471DE392E3009B811A /* UILabelExtension.swift */,
+				3439FC4F1DE45A45009B811A /* UserSingleton.swift */,
 			);
 			path = JohoFeed;
 			sourceTree = "<group>";
@@ -425,7 +445,6 @@
 				FB0B8A801DCAB29100A8575F /* safari~iPad@2x.png in Resources */,
 				FB0B8A841DCAB29100A8575F /* backbutton.png in Resources */,
 				FB0B8A881DCAB29100A8575F /* forwardbutton@2x.png in Resources */,
-				FB237F2C1DCAA09300591216 /* Packages in Resources */,
 				FBCC188F1DB7FDD9004FC179 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,20 +508,27 @@
 				FB8A28D01DCA938D0047B6A1 /* Category.swift in Sources */,
 				FB0B8A921DCAB29100A8575F /* SideBarTableViewController.swift in Sources */,
 				FB0B8A911DCAB29100A8575F /* SideBar.swift in Sources */,
+				3439FC4A1DE3F06E009B811A /* FeedsCollectionViewController.swift in Sources */,
+				3439FC4C1DE4082F009B811A /* FeedArticlesTableViewController.swift in Sources */,
 				FB0B8A901DCAB29100A8575F /* NSString+XMLEntities.m in Sources */,
+				3439FC461DE3743A009B811A /* FeedTableViewCell.swift in Sources */,
 				FB0B8A821DCAB29100A8575F /* TUSafariActivity.m in Sources */,
+				3439FC481DE392E3009B811A /* UILabelExtension.swift in Sources */,
 				FB8A28D21DCA93AA0047B6A1 /* Article.swift in Sources */,
+				3439FC4E1DE40C88009B811A /* FeedArticleViewController.swift in Sources */,
 				FB8A28D41DCA93B90047B6A1 /* Comment.swift in Sources */,
 				FBD2C68A1DD3E99300EBF34C /* SignupViewController.swift in Sources */,
 				FB0B8A8B1DCAB29100A8575F /* MWFeedInfo.m in Sources */,
 				FBD2C6881DD3E98300EBF34C /* LoginViewController.swift in Sources */,
 				FB8A28D81DCA93C90047B6A1 /* User.swift in Sources */,
+				34300CE31DE2F0310097AABB /* ArticleViewController.swift in Sources */,
 				FBCC188A1DB7FDD9004FC179 /* AppDelegate.swift in Sources */,
 				FB0B8A961DCBB9EF00A8575F /* CategoryCollectionViewCell.swift in Sources */,
 				FB0B8A8C1DCAB29100A8575F /* MWFeedItem.m in Sources */,
 				FB0B8A8E1DCAB29100A8575F /* NSDate+InternetDateTime.m in Sources */,
 				FB0B8A8D1DCAB29100A8575F /* MWFeedParser.m in Sources */,
 				FB8A28C71DCA78230047B6A1 /* CategoriesCollectionViewController.swift in Sources */,
+				3439FC501DE45A45009B811A /* UserSingleton.swift in Sources */,
 				FB0B8A8F1DCAB29100A8575F /* NSString+HTML.m in Sources */,
 				FBB631EE1DDFEC1C009C00E4 /* Connection.swift in Sources */,
 				FB0B8A731DCAB29100A8575F /* ARChromeActivity.m in Sources */,

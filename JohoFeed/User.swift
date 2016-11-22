@@ -10,6 +10,7 @@ import Gloss
 
 public struct User: Decodable {
     
+    public let id : Int?
     public let username : String
     public let email : String
     public let password : String
@@ -19,6 +20,7 @@ public struct User: Decodable {
     public let updatedAt : String
     
     public init?(json: JSON) {
+        id = "id" <~~ json
         username = ("username" <~~ json)!
         email = ("email" <~~ json)!
         password = ("password" <~~ json)!

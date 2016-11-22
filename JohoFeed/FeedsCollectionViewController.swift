@@ -9,14 +9,14 @@
 import UIKit
 import Gloss
 
-private let reuseIdentifier = "category"
+private let reuseIdentifier = "feed"
 
-class CategoriesCollectionViewController: UICollectionViewController {
-
+class FeedsCollectionViewController: UICollectionViewController {
+    
     weak var activityIndicatorView: UIActivityIndicatorView!
     
-    fileprivate var arrayCategories : [Category] = []
-    let urlCategories = URL(string: "\(Connection.serverHost)/api/categories")
+    fileprivate var arrayFeeds : [Feed] = []
+    let urlFeeds = URL(string: "\(Connection.serverHost)/api/feeds")
     var loaded = false
     
     override func viewDidLoad() {
@@ -26,13 +26,13 @@ class CategoriesCollectionViewController: UICollectionViewController {
         let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
         collectionView?.backgroundView = activityIndicatorView
         self.activityIndicatorView = activityIndicatorView
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        //        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -40,10 +40,11 @@ class CategoriesCollectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         
         if !loaded {
+            
             activityIndicatorView.startAnimating()
             
             // Make asynchrounous call to API
-            let task = URLSession.shared.dataTask(with: urlCategories! as URL) { data, response, error in
+            let task = URLSession.shared.dataTask(with: urlFeeds! as URL) { data, response, error in
                 
                 var json: Any!
                 
@@ -74,21 +75,21 @@ class CategoriesCollectionViewController: UICollectionViewController {
                 json = try! JSONSerialization.jsonObject(with: data, options: [])
                 
                 // Cast JSON as array
-                let jsonCategories = json as! NSArray
+                let jsonFeeds = json as! NSArray
                 
                 // Iterate over array and insert each category object
-                for jsonCategory in jsonCategories {
-                    guard let category = Category(json: jsonCategory as! JSON) else {
+                for jsonFeed in jsonFeeds {
+                    guard let feed = Feed(json: jsonFeed as! JSON) else {
                         print("Error while parsing category")
                         return
                     }
                     
-                    self.arrayCategories.append(category)
+                    self.arrayFeeds.append(feed)
                 }
                 
                 OperationQueue.main.addOperation {
                     // Remove spinner and show data
-                    self.title = "Categories"
+                    self.title = "Feeds"
                     self.activityIndicatorView.stopAnimating()
                     self.collectionView!.reloadData()
                     self.loaded = true
@@ -98,50 +99,50 @@ class CategoriesCollectionViewController: UICollectionViewController {
             task.resume()
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         if segue.identifier == "articles" {
-            let view = segue.destination as! FeedTableViewController
+            let view = segue.destination as! FeedArticlesTableViewController
             let cell = sender as! UICollectionViewCell
             let indexPath = self.collectionView!.indexPath(for: cell)
             
-            let selectedCategory = arrayCategories[(indexPath?.row)!]
-            view.categoryId = selectedCategory.id
-            view.categoryTitle = selectedCategory.title
+            let selectedFeed = arrayFeeds[(indexPath?.row)!]
+            view.feedId = selectedFeed.id
+            view.feedTitle = selectedFeed.title
         }
     }
-
+    
     // MARK: UICollectionViewDataSource
-
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return arrayCategories.count == 0 ? 0 : 1
+        return arrayFeeds.count == 0 ? 0 : 1
     }
-
-
+    
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return arrayCategories.count
+        return arrayFeeds.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CategoryCollectionViewCell
-    
-        // Configure the cell
-        let selectedCategory = arrayCategories[indexPath.row]
-        var imagePath = selectedCategory.imageUrl
         
+        // Configure the cell
+        let selectedFeed = arrayFeeds[indexPath.row]
+        var imagePath : String? = selectedFeed.logo
+
         if imagePath == nil {
             imagePath = ""
             cell.imgView.image = UIImage(named: "placeholder")
@@ -149,45 +150,47 @@ class CategoriesCollectionViewController: UICollectionViewController {
         else {
             let url = URL(string: imagePath!)
             let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-            cell.imgView.image = UIImage(data: data!)
+            if data != nil {
+                cell.imgView.image = UIImage(data: data!)
+            }
         }
         
         cell.backgroundColor = UIColor.white
-        cell.lbTitle.text = selectedCategory.title
-    
+        cell.lbTitle.text = selectedFeed.title
+        
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
-    }
-    */
+    // MARK: UICollectionViewDelegate
+    
+    /*
+     // Uncomment this method to specify if the specified item should be highlighted during tracking
+     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+     return true
+     }
+     */
+    
+    /*
+     // Uncomment this method to specify if the specified item should be selected
+     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+     return true
+     }
+     */
+    
+    /*
+     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+     return false
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+     return false
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+     
+     }
+     */
     
 }
 
