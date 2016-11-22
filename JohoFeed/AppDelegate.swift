@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -41,6 +42,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func setStoryboard() {
+        let storyboard : UIStoryboard = self.grabStoryboard()
+        self.setInitialScreen(storyboard)
+    }
+    
+    func grabStoryboard() -> UIStoryboard {
+        // get size
+        let screenHeight : Int = Int(UIScreen.main.bounds.size.height)
+        
+        var storyboard : UIStoryboard
+        
+        switch (screenHeight) {
+        case 568:
+            storyboard = UIStoryboard(name: "Main iPhone 5", bundle: nil)
+            break;
+        case 667:
+            storyboard = UIStoryboard(name: "Main iPhone 6", bundle: nil)
+            break;
+        case 736:
+            storyboard = UIStoryboard(name: "Main iPhone 6Plus", bundle: nil)
+            break;
+        case 1024:
+            storyboard = UIStoryboard(name: "Main iPad", bundle: nil)
+            break;
+        default:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            break;
+        }
+        
+        return storyboard;
 
+    }
+    
+    func setInitialScreen(_ storyboard : UIStoryboard) {
+        var initialViewController : UIViewController
+        
+        initialViewController = storyboard.instantiateInitialViewController(withIdentifier: "First")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+    }
 }
 
