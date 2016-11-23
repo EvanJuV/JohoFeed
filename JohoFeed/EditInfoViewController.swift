@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gloss
 
 class EditInfoViewController: UIViewController {
 
@@ -64,25 +65,17 @@ class EditInfoViewController: UIViewController {
                     print("Data is empty")
                     return
                 }
-                    
+                print(data)
                 // Parse JSON
                 let jsonRes = try! JSONSerialization.jsonObject(with: data, options: [])
-                    
-                // Cast JSON as array
-                let jsonLoginData = jsonRes as! NSArray
-                
-                let success = jsonLoginData[0] as! Int
 
                 // Assign singleton user
-//                UserSingleton.sharedInstance.user.username = tfUsername.text
-//                UserSingleton.sharedInstance.user.email = tfEmail.text
-//                
-//                UserSingleton.sharedInstance.user = recoveredUser!
+                let updatedUser = User(json: jsonRes as! JSON)
+                UserSingleton.sharedInstance.user = updatedUser
                 
                 OperationQueue.main.addOperation {
-                        
-                    if success == 1 {
-                        self.performSegue(withIdentifier: "info", sender: nil)
+                    if updatedUser != nil {
+                        self.navigationController?.popViewController(animated: true)
                     }
                 }
             }

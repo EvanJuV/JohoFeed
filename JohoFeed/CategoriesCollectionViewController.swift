@@ -142,7 +142,7 @@ class CategoriesCollectionViewController: UICollectionViewController {
         let selectedCategory = arrayCategories[indexPath.row]
         var imagePath = selectedCategory.imageUrl
         
-        if imagePath == nil {
+        if imagePath == nil || imagePath == "" {
             imagePath = ""
             cell.imgView.image = UIImage(named: "placeholder")
         }

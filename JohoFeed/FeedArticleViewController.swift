@@ -17,6 +17,7 @@ class FeedArticleViewController: UIViewController {
     @IBOutlet weak var linkToSite: UIButton!
     @IBOutlet weak var btnLike: UIButton!
     @IBOutlet weak var lbAuthor: UILabel!
+    @IBOutlet weak var webContent: UIWebView!
     
     var article : Article!
     
@@ -41,7 +42,24 @@ class FeedArticleViewController: UIViewController {
         lbTitle.text = article.title
         lbAuthor.text = article.author
         lbDescription.text = article.description
+        webContent.loadHTMLString("<style type=\"text/css\">img{position: relative;max-width: 100%;max-height: auto;height: auto;}</style><div>\(article.description!)</div>", baseURL: nil)
+//        webContent.scrollView.bounces = false
         lbFeedName.text = article.feedTitle
+        
+        //Set a very low height
+//        let heightStr = webContent.stringByEvaluatingJavaScript(from: "document.getElementsByTagName(\"div\")")
+//        var height : CGFloat!
+//        var frame:CGRect = webContent.frame
+//        webContent.frame = frame
+//        frame.size.height = 1.0
+////        webContent.sizeToFit()
+//        print(webContent.scrollView.contentSize.height)
+//        
+////        if let n = NumberFormatter().number(from: heightStr!) {
+////            height = CGFloat(n)
+////        }
+////        
+//        webContent.frame.size.height = webContent.scrollView.contentSize.height
     }
     
     override func didReceiveMemoryWarning() {

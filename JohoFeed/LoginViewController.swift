@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     let keychain = KeychainSwift()
     let urlLogin = URL(string: "\(Connection.serverHost)/api/auth")
     
+    var loginSuccess = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,11 +84,12 @@ class LoginViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-    }
+//        return
+//        
+//    }
     
     @IBAction func login(_ sender: AnyObject) {
 
@@ -133,8 +136,9 @@ class LoginViewController: UIViewController {
                             self.show(alert, sender: self)
                         }
                         return
-                        
                     }
+                    
+                    self.loginSuccess = true
                     
                     let token = jsonLoginData["token"] as! String
                     
@@ -152,7 +156,7 @@ class LoginViewController: UIViewController {
                     // Assign singleton user
                     let recoveredUser = User(json: jsonLoginData["user"] as! JSON)
                     UserSingleton.sharedInstance.user = recoveredUser!
-                    
+
                     OperationQueue.main.addOperation {
                         
                         if (jsonLoginData["success"] as? Bool)! {
@@ -174,6 +178,17 @@ class LoginViewController: UIViewController {
             show(alert, sender: self)
         }
 
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if let ident = identifier {
+            if ident == "categories" {
+                if loginSuccess != true {
+                    return false
+                }
+            }
+        }
+        return true
     }
 
 }

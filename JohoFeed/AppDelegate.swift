@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setInitialScreen(_ storyboard : UIStoryboard) {
         var initialViewController : UIViewController
         
-        initialViewController = storyboard.instantiateInitialViewController(withIdentifier: "First")
+        initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = initialViewController
