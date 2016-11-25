@@ -18,10 +18,6 @@
 		3439FC541DE4DC5F009B811A /* EditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC531DE4DC5F009B811A /* EditInfoViewController.swift */; };
 		3439FC561DE4FC79009B811A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC551DE4FC79009B811A /* TabBarController.swift */; };
 		3439FC581DE4FC8E009B811A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439FC571DE4FC8E009B811A /* NavigationController.swift */; };
-		3439FC641DE50A7E009B811A /* Main iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3439FC5C1DE50A7E009B811A /* Main iPad.storyboard */; };
-		3439FC651DE50A7E009B811A /* Main iPhone 5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3439FC5E1DE50A7E009B811A /* Main iPhone 5.storyboard */; };
-		3439FC661DE50A7E009B811A /* Main iPhone 6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3439FC601DE50A7E009B811A /* Main iPhone 6.storyboard */; };
-		3439FC671DE50A7E009B811A /* Main iPhone 6Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3439FC621DE50A7E009B811A /* Main iPhone 6Plus.storyboard */; };
 		837775AD74F4803492940EDC /* Pods_JohoFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */; };
 		FB0B8A731DCAB29100A8575F /* ARChromeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B8A311DCAB29100A8575F /* ARChromeActivity.m */; };
 		FB0B8A741DCAB29100A8575F /* ARChromeActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0B8A321DCAB29100A8575F /* ARChromeActivity.png */; };
@@ -86,10 +82,6 @@
 		3439FC531DE4DC5F009B811A /* EditInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
 		3439FC551DE4FC79009B811A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3439FC571DE4FC8E009B811A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		3439FC5D1DE50A7E009B811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPad.storyboard"; sourceTree = "<group>"; };
-		3439FC5F1DE50A7E009B811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPhone 5.storyboard"; sourceTree = "<group>"; };
-		3439FC611DE50A7E009B811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPhone 6.storyboard"; sourceTree = "<group>"; };
-		3439FC631DE50A7E009B811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPhone 6Plus.storyboard"; sourceTree = "<group>"; };
 		6AE6DA47C13C482C4B91A2A1 /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohoFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		739AE64855F8A8BFDF8BA0AC /* Pods-JohoFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohoFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohoFeed/Pods-JohoFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0B8A301DCAB29100A8575F /* ARChromeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARChromeActivity.h; sourceTree = "<group>"; };
@@ -192,10 +184,6 @@
 		3439FC591DE50989009B811A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				3439FC5C1DE50A7E009B811A /* Main iPad.storyboard */,
-				3439FC5E1DE50A7E009B811A /* Main iPhone 5.storyboard */,
-				3439FC601DE50A7E009B811A /* Main iPhone 6.storyboard */,
-				3439FC621DE50A7E009B811A /* Main iPhone 6Plus.storyboard */,
 				FBCC188D1DB7FDD9004FC179 /* Main.storyboard */,
 			);
 			name = Storyboards;
@@ -455,20 +443,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3439FC651DE50A7E009B811A /* Main iPhone 5.storyboard in Resources */,
 				FB0B8A741DCAB29100A8575F /* ARChromeActivity.png in Resources */,
 				FB0B8A871DCAB29100A8575F /* forwardbutton.png in Resources */,
 				FBCC18941DB7FDD9004FC179 /* LaunchScreen.storyboard in Resources */,
 				FB0B8A891DCAB29100A8575F /* forwardbutton@3x.png in Resources */,
 				FB0B8A7D1DCAB29100A8575F /* safari@2x.png in Resources */,
 				FB0B8A781DCAB29100A8575F /* ARChromeActivity@3x~ipad.png in Resources */,
-				3439FC641DE50A7E009B811A /* Main iPad.storyboard in Resources */,
 				FB0B8A7A1DCAB29100A8575F /* .gitkeep in Resources */,
 				FB0B8A771DCAB29100A8575F /* ARChromeActivity@3x.png in Resources */,
 				FBCC18911DB7FDD9004FC179 /* Assets.xcassets in Resources */,
 				FB0B8A7F1DCAB29100A8575F /* safari~iPad.png in Resources */,
 				FB0B8A7C1DCAB29100A8575F /* safari.png in Resources */,
-				3439FC671DE50A7E009B811A /* Main iPhone 6Plus.storyboard in Resources */,
 				FB0B8A751DCAB29100A8575F /* ARChromeActivity@2x.png in Resources */,
 				FB0B8A791DCAB29100A8575F /* ARChromeActivity~ipad.png in Resources */,
 				FB0B8A7E1DCAB29100A8575F /* safari@3x.png in Resources */,
@@ -477,7 +462,6 @@
 				FB0B8A811DCAB29100A8575F /* .gitkeep in Resources */,
 				FB0B8A861DCAB29100A8575F /* backbutton@3x.png in Resources */,
 				FB0B8A761DCAB29100A8575F /* ARChromeActivity@2x~ipad.png in Resources */,
-				3439FC661DE50A7E009B811A /* Main iPhone 6.storyboard in Resources */,
 				FB0B8A801DCAB29100A8575F /* safari~iPad@2x.png in Resources */,
 				FB0B8A841DCAB29100A8575F /* backbutton.png in Resources */,
 				FB0B8A881DCAB29100A8575F /* forwardbutton@2x.png in Resources */,
@@ -581,38 +565,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3439FC5C1DE50A7E009B811A /* Main iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3439FC5D1DE50A7E009B811A /* Base */,
-			);
-			name = "Main iPad.storyboard";
-			sourceTree = "<group>";
-		};
-		3439FC5E1DE50A7E009B811A /* Main iPhone 5.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3439FC5F1DE50A7E009B811A /* Base */,
-			);
-			name = "Main iPhone 5.storyboard";
-			sourceTree = "<group>";
-		};
-		3439FC601DE50A7E009B811A /* Main iPhone 6.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3439FC611DE50A7E009B811A /* Base */,
-			);
-			name = "Main iPhone 6.storyboard";
-			sourceTree = "<group>";
-		};
-		3439FC621DE50A7E009B811A /* Main iPhone 6Plus.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3439FC631DE50A7E009B811A /* Base */,
-			);
-			name = "Main iPhone 6Plus.storyboard";
-			sourceTree = "<group>";
-		};
 		FB0B8A3A1DCAB29100A8575F /* TUSafariActivity.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -770,6 +722,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "JohoFeed/JohoFeed-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -793,6 +746,7 @@
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../.build/debug";
 				SWIFT_OBJC_BRIDGING_HEADER = "JohoFeed/JohoFeed-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

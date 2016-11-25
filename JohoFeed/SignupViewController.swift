@@ -19,6 +19,8 @@ class SignupViewController: UIViewController {
     let urlSignup = URL(string: "\(Connection.serverHost)/api/auth/signup")
     let keychain = KeychainSwift()
     
+    var loginSuccess = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -126,5 +128,15 @@ class SignupViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if let ident = identifier {
+            if ident == "categories" {
+                if loginSuccess != true {
+                    return false
+                }
+            }
+        }
+        return true
+    }
 }

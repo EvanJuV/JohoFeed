@@ -15,7 +15,7 @@ class EditInfoViewController: UIViewController {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
     
-    let urlPut = URL(string: "\(Connection.serverHost)/users/\(UserSingleton.sharedInstance.user.id)")
+    let urlPut = URL(string: "\(Connection.serverHost)/api/users/\(UserSingleton.sharedInstance.user.id!)")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,6 @@ class EditInfoViewController: UIViewController {
         title = "Edit Information"
         tfUsername.text = UserSingleton.sharedInstance.user.username
         tfEmail.text = UserSingleton.sharedInstance.user.email
-        tfPassword.text = "password"
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,13 +35,22 @@ class EditInfoViewController: UIViewController {
         
         var json : [String : Any] = [:]
         
-        if tfEmail.text != "" && tfUsername.text != nil {
-            json = ["username": tfUsername.text!, "email": tfEmail.text!] as [String : Any]
-        }
-        else if tfEmail.text != "" && tfUsername.text != nil && tfPassword.text != nil {
+        // Validate that values are set
+        if tfEmail.text != "" && tfUsername.text != "" && tfPassword.text != "" {
             json = ["username": tfUsername.text!, "password": tfPassword.text!, "email": tfEmail.text!] as [String : Any]
         }
+        else if tfEmail.text != "" && tfUsername.text != "" {
+            json = ["username": tfUsername.text!, "email": tfEmail.text!] as [String : Any]
+        }
+        else {
+            let alert = UIAlertController(title: "Error", message: "All fields must be filled", preferredStyle: .alert)
+            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(accion)
+            show(alert, sender: self)
             
+            return
+        }
+        
         do {
                 
             let jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
@@ -65,12 +73,25 @@ class EditInfoViewController: UIViewController {
                     print("Data is empty")
                     return
                 }
+                
                 print(data)
                 // Parse JSON
                 let jsonRes = try! JSONSerialization.jsonObject(with: data, options: [])
 
                 // Assign singleton user
                 let updatedUser = User(json: jsonRes as! JSON)
+                
+                guard updatedUser != nil else {
+                    OperationQueue.main.addOperation {
+                        let alert = UIAlertController(title: "Error", message: "Username and/or password are invalid", preferredStyle: .alert)
+                        let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alert.addAction(accion)
+                        self.show(alert, sender: self)
+                    }
+                    
+                    return
+                }
+                
                 UserSingleton.sharedInstance.user = updatedUser
                 
                 OperationQueue.main.addOperation {

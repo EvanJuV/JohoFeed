@@ -17,7 +17,7 @@ class FeedArticleViewController: UIViewController {
     @IBOutlet weak var linkToSite: UIButton!
     @IBOutlet weak var btnLike: UIButton!
     @IBOutlet weak var lbAuthor: UILabel!
-    @IBOutlet weak var webContent: UIWebView!
+    //@IBOutlet weak var webContent: UIWebView!
     
     var article : Article!
     
@@ -42,9 +42,10 @@ class FeedArticleViewController: UIViewController {
         lbTitle.text = article.title
         lbAuthor.text = article.author
         lbDescription.text = article.description
-        webContent.loadHTMLString("<style type=\"text/css\">img{position: relative;max-width: 100%;max-height: auto;height: auto;}</style><div>\(article.description!)</div>", baseURL: nil)
+        //webContent.loadHTMLString("<style type=\"text/css\">img{position: relative;max-width: 100%;max-height: auto;height: auto;}</style><div>\(article.description!)</div>", baseURL: nil)
 //        webContent.scrollView.bounces = false
         lbFeedName.text = article.feedTitle
+        btnLike.isHidden = true
         
         //Set a very low height
 //        let heightStr = webContent.stringByEvaluatingJavaScript(from: "document.getElementsByTagName(\"div\")")

@@ -54,18 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var storyboard : UIStoryboard
         
         switch (screenHeight) {
-        case 568:
-            storyboard = UIStoryboard(name: "Main iPhone 5", bundle: nil)
-            break;
-        case 667:
-            storyboard = UIStoryboard(name: "Main iPhone 6", bundle: nil)
-            break;
-        case 736:
-            storyboard = UIStoryboard(name: "Main iPhone 6Plus", bundle: nil)
-            break;
-        case 1024:
-            storyboard = UIStoryboard(name: "Main iPad", bundle: nil)
-            break;
+
         default:
             storyboard = UIStoryboard(name: "Main", bundle: nil)
             break;

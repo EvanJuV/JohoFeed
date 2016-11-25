@@ -42,7 +42,7 @@ class ArticleViewController: UIViewController {
         lbAuthor.text = article.author
         lbDescription.text = article.description
         lbFeedName.text = article.feedTitle
-        
+        btnLike.isHidden = true
         
     }
 
