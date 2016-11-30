@@ -24,6 +24,10 @@ class EditInfoViewController: UIViewController {
         title = "Edit Information"
         tfUsername.text = UserSingleton.sharedInstance.user.username
         tfEmail.text = UserSingleton.sharedInstance.user.email
+        
+        // Remove keyboard with a tap outside of it
+        let tap = UITapGestureRecognizer(target: self, action: #selector (hideKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -118,4 +122,7 @@ class EditInfoViewController: UIViewController {
     }
     */
 
+    func hideKeyboard() {
+        view.endEditing(true)
+    }
 }

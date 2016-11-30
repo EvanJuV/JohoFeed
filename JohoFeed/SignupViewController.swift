@@ -24,7 +24,9 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Remove keyboard with a tap outside of it
+        let tap = UITapGestureRecognizer(target: self, action: #selector (hideKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -138,5 +140,9 @@ class SignupViewController: UIViewController {
             }
         }
         return true
+    }
+    
+    func hideKeyboard() {
+        view.endEditing(true)
     }
 }
