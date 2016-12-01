@@ -69,7 +69,15 @@ class SignupViewController: UIViewController {
                     // Cast JSON as array
                     let jsonLoginData = jsonRes as! NSDictionary
                     
-                    let success = jsonLoginData["success"] as! Bool
+                    guard let success = jsonLoginData["success"] as? Bool else {
+                        OperationQueue.main.addOperation {
+                            let alert = UIAlertController(title: "Error", message: "Username is already taken", preferredStyle: .alert)
+                            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            alert.addAction(accion)
+                            self.show(alert, sender: self)
+                        }
+                        return
+                    }
                     
                     guard success else {
                         OperationQueue.main.addOperation {

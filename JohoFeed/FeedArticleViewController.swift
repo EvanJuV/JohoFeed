@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedArticleViewController: UIViewController {
+class FeedArticleViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var lbFeedName: UILabel!
     @IBOutlet weak var image: UIImageView!
@@ -17,7 +17,7 @@ class FeedArticleViewController: UIViewController {
     @IBOutlet weak var linkToSite: UIButton!
     @IBOutlet weak var btnLike: UIButton!
     @IBOutlet weak var lbAuthor: UILabel!
-    //@IBOutlet weak var webContent: UIWebView!
+    @IBOutlet weak var webContent: UIWebView!
     
     var article : Article!
     
@@ -42,8 +42,9 @@ class FeedArticleViewController: UIViewController {
         lbTitle.text = article.title
         lbAuthor.text = article.author
         lbDescription.text = article.description
-        //webContent.loadHTMLString("<style type=\"text/css\">img{position: relative;max-width: 100%;max-height: auto;height: auto;}</style><div>\(article.description!)</div>", baseURL: nil)
-//        webContent.scrollView.bounces = false
+        webContent.loadHTMLString("<style type=\"text/css\">img{position: relative;max-width: 100%;max-height: auto;height: auto;}</style><div>\(article.description!)</div>", baseURL: nil)
+        webContent.scrollView.bounces = false
+        webContent.reload()
         lbFeedName.text = article.feedTitle
         btnLike.isHidden = true
         
@@ -83,4 +84,14 @@ class FeedArticleViewController: UIViewController {
      }
      */
     
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        var frame : CGRect = webView.frame
+        frame.size.height = 1
+        webView.frame = frame
+        let fittingSize : CGSize = webView.sizeThatFits(CGSize.zero)
+        frame.size = fittingSize
+        webView.frame = frame
+        
+        print("Height \(webView.frame.height)")
+    }
 }

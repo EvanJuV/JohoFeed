@@ -839,7 +839,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLa-9n-QZy">
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLa-9n-QZy" customClass="DescriptionWebView" customModule="JohoFeed" customModuleProvider="target">
                                         <rect key="frame" x="70" y="234" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -886,6 +886,7 @@
                         <outlet property="lbFeedName" destination="SDK-88-VBC" id="BfE-hm-4d7"/>
                         <outlet property="lbTitle" destination="jFN-2M-VPu" id="l8R-0B-UZo"/>
                         <outlet property="linkToSite" destination="pxR-iV-28N" id="0id-sQ-8eb"/>
+                        <outlet property="webContent" destination="JLa-9n-QZy" id="ua8-mw-F6N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVQ-W8-zcS" userLabel="First Responder" sceneMemberID="firstResponder"/>

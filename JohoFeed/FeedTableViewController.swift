@@ -21,6 +21,7 @@ class FeedTableViewController: UITableViewController {
     var arrayArticles : [Article] = []
     
     var numOfSections = 1
+    var imageCache = [String : UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -142,20 +143,46 @@ class FeedTableViewController: UITableViewController {
         
         let selectedArticle = arrayArticles[indexPath.row]
         
-        var imagePath = selectedArticle.imageUrl
+        cell.imgView.image = UIImage(named: "placeholder")
         
-        if imagePath == nil || imagePath == "" {
-            imagePath = ""
-            cell.imgView.image = UIImage(named: "placeholder")
+        let imagePath = selectedArticle.imageUrl
+        
+        if let img = imageCache[imagePath!] {
+            cell.imageView?.image = img
         }
-        else {
-            let url = URL(string: imagePath!)
-            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+        else if imagePath != nil && imagePath != "" {
             
-            if data != nil {
-                cell.imgView.image = UIImage(data: data!)
-
+            let url = URL(string: imagePath!)
+            
+            print(url)
+            
+            URLSession.shared.dataTask(with: url! as URL) { (data, response, error) -> Void in
+                print("asdfsad")
+                if error == nil {
+                    
+                    let image = UIImage(data: data!)
+                    
+                    self.imageCache[imagePath!] = image
+                    
+                    DispatchQueue.main.async {
+                        if let cellToUpdate = tableView.cellForRow(at: indexPath) {
+                            print("change dis")
+                            cellToUpdate.imageView?.image = image
+                        }
+                    }
+                }
+                else {
+                    print("Error: \(error?.localizedDescription)")
+                }
+                
             }
+            
+            //let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            
+            //if data != nil {
+                //cell.imgView.image = UIImage(data: data!)
+                // self.tableView.reloadData()
+            //}
         }
         
         cell.lbTitle?.text = selectedArticle.title

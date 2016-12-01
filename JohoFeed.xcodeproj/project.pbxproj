@@ -64,6 +64,7 @@
 		FBCC18911DB7FDD9004FC179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCC18901DB7FDD9004FC179 /* Assets.xcassets */; };
 		FBCC18941DB7FDD9004FC179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCC18921DB7FDD9004FC179 /* LaunchScreen.storyboard */; };
 		FBCC189C1DB80548004FC179 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC189B1DB80548004FC179 /* FeedTableViewController.swift */; };
+		FBCDDE3D1DEFA59D004921D2 /* DescriptionWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDE3C1DEFA59D004921D2 /* DescriptionWebView.swift */; };
 		FBD2C6881DD3E98300EBF34C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2C6871DD3E98300EBF34C /* LoginViewController.swift */; };
 		FBD2C68A1DD3E99300EBF34C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2C6891DD3E99300EBF34C /* SignupViewController.swift */; };
 		FBD2C6AC1DD4037200EBF34C /* Pods_JohoFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD2C6AB1DD4037200EBF34C /* Pods_JohoFeed.framework */; };
@@ -162,6 +163,7 @@
 		FBCC18951DB7FDD9004FC179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBCC189B1DB80548004FC179 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		FBCC189D1DB805EC004FC179 /* JohoFeed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JohoFeed-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBCDDE3C1DEFA59D004921D2 /* DescriptionWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionWebView.swift; sourceTree = "<group>"; };
 		FBD2C6871DD3E98300EBF34C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FBD2C6891DD3E99300EBF34C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		FBD2C6AB1DD4037200EBF34C /* Pods_JohoFeed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_JohoFeed.framework; path = "../../Library/Developer/Xcode/DerivedData/JohoFeed-feqgqifutlaxjgapkebyibplvlto/Build/Products/Debug-iphonesimulator/Pods_JohoFeed.framework"; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				3439FC531DE4DC5F009B811A /* EditInfoViewController.swift */,
 				3439FC551DE4FC79009B811A /* TabBarController.swift */,
 				3439FC571DE4FC8E009B811A /* NavigationController.swift */,
+				FBCDDE3C1DEFA59D004921D2 /* DescriptionWebView.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				FB0B8A961DCBB9EF00A8575F /* CategoryCollectionViewCell.swift in Sources */,
 				FB0B8A8C1DCAB29100A8575F /* MWFeedItem.m in Sources */,
 				FB0B8A8E1DCAB29100A8575F /* NSDate+InternetDateTime.m in Sources */,
+				FBCDDE3D1DEFA59D004921D2 /* DescriptionWebView.swift in Sources */,
 				3439FC561DE4FC79009B811A /* TabBarController.swift in Sources */,
 				FB0B8A8D1DCAB29100A8575F /* MWFeedParser.m in Sources */,
 				FB8A28C71DCA78230047B6A1 /* CategoriesCollectionViewController.swift in Sources */,
